@@ -16,6 +16,7 @@ import { MobileRayProvider } from '../Interactor/MobileRayProvider';
 
 const TAG = 'MobileInteractor';
 
+
 // These thresholds are not for deciding when to invoke onDragStart, but rather to tell the MobileInteractor when to switch what type of drag to track.
 const INITIAL_TOUCHPAD_SWITCH_THRESHOLD = 0.05; // Screen position units mapped from the phone's touch surface
 const OVERRIDE_TOUCHPAD_SWITCH_THRESHOLD = 0.1; // Screen position units mapped from the phone's touch surface
