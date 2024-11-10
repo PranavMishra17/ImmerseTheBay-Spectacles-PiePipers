@@ -3817,6 +3817,22 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<ScriptComponent/60374617-fdc3-460e-a0c2-c45ba3c240a6>
+  PrefabRemaps:
+    []
+  Name: ChatGPT API
+  Enabled: true
+  ScriptAsset: !<reference> 7f6bafdc-e402-4a25-b803-aec92d65d7bc
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      remoteServiceModule: !<reference.RemoteServiceModule> 80a1e407-19e5-4669-9f57-f15724c487a9
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/608cd68b-202b-4d11-bca1-6a71f3866a0e>
   PrefabRemaps:
     []
@@ -4406,16 +4422,16 @@
 - !<ScriptComponent/79b4e84e-e1e9-4053-a695-cd9a57c5e7cd>
   PrefabRemaps:
     []
-  Name: Untitled TypeScript
+  Name: phonePOLE
   Enabled: true
   ScriptAsset: !<reference> 865ab0e0-ad7b-49e5-8e2f-a8a8e8c7c455
   ScriptInputsDefault:
-    {}
+    remoteServiceModule: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-      {}
+      remoteServiceModule: !<reference.RemoteServiceModule> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -6467,6 +6483,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/bb18744b-816d-4408-8f97-4667635c764b>
+  PrefabRemaps:
+    []
+  Name: ChatGPT API
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -8.549792, y: 0.000000, z: 40.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 0.100000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 60374617-fdc3-460e-a0c2-c45ba3c240a6
 - !<ScriptComponent/bb747549-5254-4d8b-a170-63ab43ee3aa1>
   PrefabRemaps:
     []
@@ -6542,7 +6573,7 @@
     scale: {x: 1.000000, y: 10.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    []
+    - !<own> bb18744b-816d-4408-8f97-4667635c764b
   Components:
     - !<own> 6f30ba0e-ab4b-4307-bc27-05eedfaab21b
 - !<ScriptComponent/bd4379a7-c4f8-4c9b-8b36-3c83a1ce89bf>
